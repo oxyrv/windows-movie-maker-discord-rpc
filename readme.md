@@ -37,4 +37,26 @@ Closing the window directly may cause the Rich Presence to stay active until Dis
 
 ## 📸 Screenshot
 
+
 ![ss](https://files.catbox.moe/dzia4z.png)
+
+## ❗SECURITY DISCLAIMER (read carefully)
+
+As far as I know, there are no well-known CVEs about WMM **2012** (the 2012 specifically since it's the only version that I haven't seen listed in public CVE databases)
+That said, this does **not** guarantee that the software is free of vulnerabilities.
+
+Windows Movie Maker is an old, discontinued application, so basic security precautions are strongly recommended.
+
+### Recommended precautions
+
+- Prevent the software from accessing the web (via a firewall rule)
+- Make sure you only open trusted project files (not random ones) (as there might be vulnerabilities with specially crafted files that could execute arbitrary code on the local user's account)
+- Run WMM as standard user (never admin)
+- Enable Windows Exploit Protection for `moviemaker.exe`
+  * DEP: On
+  * ASLR: On
+  * CFG: On (if available)
+- Only open:
+  * Your own footage
+  * Files from trusted sources
+- (Optional) use a virtual machine
